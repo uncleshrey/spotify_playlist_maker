@@ -74,33 +74,3 @@ Example test file
 Create a file test_songs.txt with:
 Tum Hi Ho – Arijit Singh
 Shape of You - Ed Sheeran
-
-Git: Add manual to your project and push to GitHub
--------------------------------------------------
-Run these commands in PowerShell inside your project folder (adjust remote URL if needed):
-
-# If repository not initialized yet
-git init; git add USER_MANUAL.md; git commit -m "Add user manual"
-
-# Add remote and push (use your GitHub repo URL)
-git remote add origin https://github.com/uncleshrey/spotify_playlist_maker.git; git branch -M main; git push -u origin main
-
-If remote already exists, just:
-
-git add USER_MANUAL.md; git commit -m "Add user manual"; git push
-
-Notes
------
-- Do not commit client secrets. Use environment variables.
-- For large lists, use Preview first and create smaller playlists if needed.
-
-Next features you may want to add
----------------------------------
-- Per-line selection in preview (choose which matches to include)
-- Save/load manual entry drafts
-- Persist theme and settings to a config file
-- Fuzzy/fallback search strategies
-
-Contact
--------
-If you want me to add the manual directly to a remote repo (push), provide access details or run the git commands above locally and paste any errors. I can also create a README.md instead of USER_MANUAL.md if you prefer.
